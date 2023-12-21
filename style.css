@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(image.gif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body a{
+    color: #fff;
+}
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 40px 60px;
+    color: #fff;
+}
+header nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    font-size: 22.5px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+header nav a::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    width:0%;
+    height: 2.5px;
+    transition: .3s;
+}
+header nav a:hover::before{
+    width: 100%;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(image.gif);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    color: #fff;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 30px 0;
+}
+.input-box input {
+    width:  100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+    color: #fff;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: transparent;
+    padding: 5px;
+    overflow: hidden;
+}
+.signin{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: transparent;
+    padding: 5px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #fff;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #45105e, #8306ff);
+    border-radius: 30px;
+    transition: .5s;
+}
+.input{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #45105e, #8306ff);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.checkbox{
+    margin: 30px 10px 30px 0;
+}
+#signin{
+    left: 50px;
+}
+#signup{
+    left: 450px;
+}
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 0;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    accent-color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}

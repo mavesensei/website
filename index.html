@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>mavesensei</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1>mavesensei</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="signin()">SIGN IN</button>
+                <button type="button" class="toggle-btn" onclick="signup()">SIGN UP</button>
+            </div>
+            <form id="signin" class="input">
+                <div class="input-box"><input type="text" placeholder="Username" minlength="6" maxlength="12" required><i class='bx bxs-user'></i></div>
+                <div class="input-box"><input type="password" placeholder="Password" minlength="8" maxlength="16" required><i class='bx bxs-lock-alt'></i></div>
+                <button type="submit" class="btn">SIGN IN</button>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember Me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+            </form>
+            <form id="signup" class="input">
+                <div class="input-box"><input type="text" placeholder="Username" minlength="6" maxlength="12" required><i class='bx bxs-user'></i></div>
+                <div class="input-box"><input type="password" placeholder="Password" minlength="8" maxlength="16" required><i class='bx bxs-lock-alt'></i></div>
+                <div class="input-box"><input type="email" placeholder="Email" required><i class="bx bxs-envelope"></i></div>
+                <button type="submit" class="btn">SIGN UP</button>
+                <div class="terms">
+                    <label><input type="checkbox"> I agree </label>
+                    <a href="#">terms & conditions</a>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("signin");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+ 
+        function signup(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+        }
+        function signin(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+        }
+    </script>
+</body>
+</html>
